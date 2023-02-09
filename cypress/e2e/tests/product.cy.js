@@ -1,5 +1,5 @@
 let config = Cypress.config()
-describe('Products.', function () {
+describe('Products', function () {
 
   it('product', function () {
     cy.visit(`${config.baseUrl}`);

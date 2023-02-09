@@ -1,5 +1,5 @@
 let config = Cypress.config()
-describe('Navigation and categories.', function () {
+describe('Navigation and categories', function () {
 
   it('check main navigation', function () {
     cy.visit(`${config.baseUrl}`);

@@ -1,6 +1,6 @@
 
 let config = Cypress.config()
-describe('Create new user.', function () {
+describe('Create new user', function () {
 
   beforeEach('before each test', function () {
     cy.visit(`${config.baseUrl}`);
