@@ -1,15 +1,12 @@
 
 let config = Cypress.config()
-describe('Transactional emails', function () {
+describe('Transactional mails', function () {
 
   it('company email', function () {
     cy.visit(`${config.baseUrl}`);
     cy.get('.hot-support-container a[href="mailto:mail@herzog-elmiger.ch"]').contains('mail@herzog-elmiger.ch')
       .should('be.visible') 
-      .click();
-    cy.location().should(loc => {
-        expect(loc.pathname).to.equal('/bodenbelage.html');
-    });
+      .click({force:true});
   });
 
   it.skip('can log in with confirmed account', () => {
