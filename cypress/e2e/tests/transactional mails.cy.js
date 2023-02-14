@@ -4,9 +4,12 @@ describe('Transactional mails', function () {
 
   it('company email', function () {
     cy.visit(`${config.baseUrl}`);
+    cy.get('.hotline a[href="tel:0041413175050"]').contains('041 317 50 50')
+      .should('be.visible') 
+      .click();
     cy.get('.hot-support-container a[href="mailto:mail@herzog-elmiger.ch"]').contains('mail@herzog-elmiger.ch')
       .should('be.visible') 
-      .click({force:true});
+      .click();
   });
 
   it.skip('can log in with confirmed account', () => {
