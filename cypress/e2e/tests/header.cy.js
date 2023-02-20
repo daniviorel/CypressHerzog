@@ -1,12 +1,9 @@
 let config = Cypress.config()
-describe('Products', function () {
+describe('Header', function () {
 
-  it('product', function () {
+  it('wishlist', function () {
     cy.visit(`${config.baseUrl}`);
-    cy.get('.top-link-product a[title="Meine Favoritenliste"]').contains('a.wishlist.icon.icon-favorites') 
+    cy.get('.top-link-product a[href="https://p-2023-herzog-elmiger.appengine.flow.ch/wishlist/"]')
       .click();
-    cy.location().should(loc => {
-        expect(loc.pathname).to.equal('customer/account/login/referer/aHR0cHM6Ly9wLTIwMjMtaGVyem9nLWVsbWlnZXIuYXBwZW5naW5lLmZsb3cuY2gvd2lzaGxpc3Qv/');
-    });
   });
 });

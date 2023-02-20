@@ -7,7 +7,7 @@ describe('Create new user', function () {
     cy.get('.authorization-link ').contains('Anmelden')
       .should('be.visible')
       .click();
-    cy.get('.register-link span ').contains('Registrierung für Neukunden.')
+    cy.get('.register-link span').contains('Registrierung für Neukunden.')
       .should('be.visible')
       .click();
     cy.get("[name='field[393]']").type("Vio");
