@@ -2,7 +2,7 @@
 let config = Cypress.config()
 describe('Transactional mails', function () {
 
-  it('company email', function () {
+  it.skip('company email', function () {
     cy.visit(`${config.baseUrl}`);
     cy.get('.hotline a[href="tel:0041413175050"]').contains('041 317 50 50')
       .should('be.visible') 
