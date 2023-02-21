@@ -1,12 +1,12 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-  projectId: "qg1wi1",
+  projectId: 'ffaif5',
   viewportWidth: 1920,
   viewportHeight: 1280,
   e2e: {
     setupNodeEvents(on, config) {},
-    baseUrl: "https://arcmedia:arcmedia123@p-2023-herzog-elmiger.appengine.flow.ch/",
+    baseUrl: "https://arcmedia:arcmedia123@test-spa-aarau-upgrade.herzog-elmiger.ch/",
     viewportWidth: 1920,
     viewportHeight: 1280,
     specPattern: 'cypress/e2e/tests/**/*.cy.{js,jsx,ts,tsx}',

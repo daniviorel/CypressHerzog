@@ -9,7 +9,7 @@ describe('Footer', function () {
 });
   it('certificate', function () {
     cy.visit(`${config.baseUrl}`);
-    cy.get('.link-list a[href="https://www.herzog-elmiger.ch/ueberuns/ueber-uns/zertifizierungen/"]').contains('Zertifizierungen')
+    cy.get('.link-list a[href="https://test-spa-aarau-upgrade.herzog-elmiger.ch/ueberuns/ueber-uns/zertifizierungen/"]').contains('Zertifizierungen')
       .click();
   });
 });
