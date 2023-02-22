@@ -4,7 +4,7 @@ describe('Search', function () {
 
   it('search', function () {
     cy.visit(`${config.baseUrl}`);
-    cy.get("[name='q']").type("Kanten")
+    cy.get("[name='q']").type("Kleben")
       .click()
   });
 });
