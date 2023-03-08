@@ -28,7 +28,7 @@ describe('Checkout', function () {
   });
 
   it('checkout', function () {
-    cy.get('.page messages a[href="https://p-2023-herzog-elmiger.appengine.flow.ch/checkout/cart/"]')
+    cy.get('.messages a[href="https://p-2023-herzog-elmiger.appengine.flow.ch/checkout/cart/"]')
       .click();
   });
 });
