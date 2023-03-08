@@ -8,8 +8,8 @@ describe('Footer', function () {
       .click();  
   it("webpage redirect", () => {
     const page = {
-        "from": "https://p-2023-herzog-elmiger.appengine.flow.ch/",
-        "to": "https:/p-2023-herzog-elmiger.appengine.flow.ch/customer/account/login/"
+        "from": "https://test-spa-aarau-upgrade.herzog-elmiger.ch/",
+        "to": "https://test-spa-aarau-upgrade.herzog-elmiger.ch/customer/account/login/"
     }
 
     cy.visit(page.from, { failOnStatusCode: false });
@@ -25,7 +25,7 @@ describe('Footer', function () {
       .click();
   it("webpage redirect", () => {
     const page = {
-        "from": "https://p-2023-herzog-elmiger.appengine.flow.ch/",
+        "from": "https://test-spa-aarau-upgrade.herzog-elmiger.ch/",
         "to": "https://www.herzog-elmiger.ch/ueberuns/ueber-uns/zertifizierungen/"
     }
 
