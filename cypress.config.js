@@ -6,7 +6,7 @@ module.exports = defineConfig({
   viewportHeight: 1280,
   e2e: {
     setupNodeEvents(on, config) {},
-    baseUrl: "https://arcmedia:arcmedia123@https://test-spa-aarau-upgrade.herzog-elmiger.ch/",
+    baseUrl: "https://arcmedia:arcmedia123@p-2023-herzog-elmiger.appengine.flow.ch/",
     viewportWidth: 1920,
     viewportHeight: 1280,
     specPattern: 'cypress/e2e/tests/**/*.cy.{js,jsx,ts,tsx}',

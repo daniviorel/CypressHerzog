@@ -10,7 +10,7 @@ describe('Products', function () {
         expect(loc.pathname).to.equal('/bodenbelage.html');
     });
 
-    cy.get('.hover-box a[href="https://test-spa-aarau-upgrade.herzog-elmiger.ch/tilo-vinyl-boden-elito-trend-eiche-natur.html"]').contains('tilo Vinyl-Boden Elito Trend Eiche natur gebürstet')
+    cy.get('.hover-box a[href="https://p-2023-herzog-elmiger.appengine.flow.ch/tilo-vinyl-boden-elito-trend-eiche-natur.html"]').contains('tilo Vinyl-Boden Elito Trend Eiche natur gebürstet')
       .should('be.visible') 
       .click();
     cy.location().should(loc => {
