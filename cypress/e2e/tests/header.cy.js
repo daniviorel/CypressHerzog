@@ -3,12 +3,12 @@ describe('Header', function () {
 
   it('wishlist', function () {
     cy.visit(`${config.baseUrl}`);
-    cy.get('.top-link-product a[href="https://p-2023-herzog-elmiger.appengine.flow.ch/wishlist/"]')
+    cy.get('.top-link-product a[href="https://testshop.herzog-elmiger.ch/wishlist/"]')
       .click();
   it("webpage redirect", () => {
     const page = {
-        "from": "https://p-2023-herzog-elmiger.appengine.flow.ch/wishlist/",
-        "to": "https://p-2023-herzog-elmiger.appengine.flow.ch/customer/account/login/referer/"
+        "from": "https://testshop.herzog-elmiger.ch/wishlist/",
+        "to": "https://testshop.herzog-elmiger.ch/customer/account/login/referer/"
     }
 
     cy.visit(page.from, { failOnStatusCode: false });
