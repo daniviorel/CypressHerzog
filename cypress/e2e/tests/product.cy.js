@@ -19,7 +19,7 @@ describe('Products', function () {
 
     cy.get("[name='super_group[9184]']").type("1")
       .should('have.length', 1)
-      .click({ force:true });
+      .click({ force: true });
 
     cy.get('button span').contains('Zum Warenkorb hinzufügen')
       .should('be.visible') 
